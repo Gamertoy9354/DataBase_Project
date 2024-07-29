@@ -2,25 +2,27 @@ import pandas as pd
 from create import createfunc
 from modify import modifyfunc
 from view import viewfunc
-with open("username.myext","r") as fileU:
-    listU = []
-    for i in fileU:
-        listU.append(i)
-with open("password.myext","r") as fileP:
-    listp = []
-    for z in fileP:
-        listp.append(z)
-for U in listU:
-    x = U
-print("welcome to the database please enter your credentials to login!")
-userLOG = input("Please enter your username: ")
-userLOGIN = userLOG+"\n"
-passLOG = input("Please enter your password: ")
-passLOGIN = passLOG+"\n"
-if userLOGIN in listU:
-    if passLOGIN in listp:
-        print("You have successfully logged in!")
-    else:
-        print("Your Password is not correct or you have not registered yet.")
+path = "/home/shis/Desktop/desktop folders/python project/DATABASE/ADMINCABIN/Users.xlsx"
+edf = pd.read_excel(path,engine="openpyxl")
+username = input("Enter your username: ")
+# Check if the username exists in the DataFrame
+if username in edf['username'].values:
+    # Locate the row where the username matches
+    user_row = edf[edf['username'] == username]
+    
+    # Access the 'password' column for this row
+    password = user_row['password'].values[0]  # Use [0] to get the actual value
+    priority = user_row["Priority"].values[0]
+    firstname = user_row["first name"].values[0]
+    upassword = input("Please enter your password: ")
+    if upassword == password:
+        if priority == "EMP":
+            print(f"welcome back {firstname} your current status is employee")
+        elif priority == "USER":
+            print(f"welcome back {firstname} your current status is USER")
+        elif priority == "ADMIN":
+            print(f"welcome back {firstname} your current status is ADMIN")
+        else:
+            print("you do not have access to the DataBase")
 else:
-    print("Your Username is not correct or you have not registered yet.")
+    print("Username not found.")
