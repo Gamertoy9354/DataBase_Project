@@ -1,8 +1,5 @@
 import pandas as pd
-from create import createfunc
-from modify import modifyfunc
-from view import viewfunc
-path = "/home/shis/Desktop/desktop folders/python project/DATABASE/ADMINCABIN/Users.xlsx"
+path = ""
 edf = pd.read_excel(path,engine="openpyxl")
 username = input("Enter your username: ")
 # Check if the username exists in the DataFrame

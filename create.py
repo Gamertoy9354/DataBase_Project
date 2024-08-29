@@ -1,5 +1,4 @@
-import pandas as pd
-import numpy as np
+import pandas as pd     
 def createfunc():
     directory = str(input("Please Enter your Directory To Save: "))
     filename1 = str(input("Please Enter Your File Name: "))
@@ -15,7 +14,7 @@ def createfunc():
         itemranger = int(input())
         item_list = []
         for z in range(itemranger):
-            print("Your", str(z + 1), "item: ")
+            print("Your", str(z + 1), "item for heading",heading,":")
             iteming = input().strip()
             item_list.append(iteming)
         items_dict[heading] = item_list

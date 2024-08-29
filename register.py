@@ -1,5 +1,5 @@
 import pandas as pd
-path = "/home/shis/Desktop/desktop folders/python project/DATABASE/ADMINCABIN/Users.xlsx"
+path = ""
 print("Welcome to the database. please sign in to use the DataBase and first register will be ADMIN: ")
 def is_excel_file_empty(file_path):
     # Read the Excel file
@@ -33,14 +33,9 @@ if ul > 3:
         passr = str(passwordRR)
         passrlen = len(passr)
         if passlen > 5 and any(char.isupper() for char in passs) and any(char2.isdigit() for char2 in passs) and passs == passr:
-            #saving username
-            with open("username.myext",'a') as fileU:
-                fileU.write(username+"\n")
-            #saving password
-            with open("password.myext",'a') as fileP:
-                fileP.write(passs+"\n")
+            #making the passwords and username dataframe
             #making the DataFrame
-            dataf = pd.DataFrame({"username":username,"Priority":priority,"first name":firstN,"middle Name":midN,"Last Name":lastN,"Date Of Birth":DOB,"Phone No.":phoneno},index=[1])
+            dataf = pd.DataFrame({"username":username,"Priority":priority,"first name":firstN,"middle Name":midN,"Last Name":lastN,"Date Of Birth":DOB,"Phone No.":phoneno,"password":passs},index=[1])
             #reading the old excel sheet
             edf = pd.read_excel(path,engine="openpyxl")
             #making changes to the DataFrame
