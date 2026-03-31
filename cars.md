@@ -1,14 +1,14 @@
 # Car Data
 
-| Make | Model | Year | Color | Mileage |
-| ---- | ---- | ---- | ---- | ---- |
-| Toyota | Camry | 2020 | Blue | 15000 |
-| Honda | Civic | 2019 | Red | 25000 |
-| Ford | Focus | 2021 | Black | 10000 |
-| BMW | X5 | 2018 | White | 30000 |
-| Mercedes | C-Class | 2022 | Silver | 5000 |
-| Audi | A4 | 2020 | Gray | 20000 |
-| Tesla | Model 3 | 2021 | Red | 15000 |
-| Nissan | Altima | 2019 | Blue | 22000 |
-| Chevrolet | Malibu | 2017 | White | 40000 |
-| Hyundai | Elantra | 2020 | Black | 18000 |
+| Make | Model | Year | Color | Price |
+|------|-------|------|-------|-------|
+| Toyota | Camry | 2023 | Silver | $25000 |
+| Honda | Civic | 2022 | Blue | $22000 |
+| Ford | Focus | 2023 | Red | $20000 |
+| Chevrolet | Malibu | 2021 | Black | $24000 |
+| Nissan | Altima | 2022 | White | $23000 |
+| Hyundai | Elantra | 2023 | Gray | $19000 |
+| Kia | Optima | 2021 | Blue | $21000 |
+| Volkswagen | Jetta | 2022 | Black | $22500 |
+| Mazda | Mazda3 | 2023 | Red | $21500 |
+| Subaru | Impreza | 2022 | White | $23500 |
