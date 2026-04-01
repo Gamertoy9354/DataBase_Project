@@ -1,9 +1,7 @@
-# Car Data
-
-| Make | Model | Year | Color | Price |
-| ---- | ----- | ---- | ----- | ----- |
-| Toyota | Camry | 2020 | Blue | $24000 |
-| Honda | Civic | 2019 | Red | $21000 |
-| Ford | Focus | 2021 | White | $22000 |
-| Chevy | Malibu | 2018 | Black | $25000 |
-| Nissan | Altima | 2022 | Silver | $27000 |
+| Country | Economy | Population | HDI | Region |
+|---------|--------|-----------|-----|--------|
+| Germany | Strong | 83M | 0.947 | Western Europe |
+| India | Growing | 1.3B | 0.633 | Southern Asia |
+| Brazil | Developing | 213M | 0.754 | South America |
+| Japan | Advanced | 125M | 0.919 | East Asia |
+| Nigeria | Emerging | 206M | 0.532 | Western Africa |
